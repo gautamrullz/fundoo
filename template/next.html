@@ -1,39 +1,47 @@
 <div class="container-fluid">
-    <div class="row" style="height:200px; border:2px solid">
-        <div class="col-lg-2 col-sm-4 " style="height:100%; border:2px solid green">
 
+  <div class="row" style=" border:2px solid">
+    <div class="col-lg-2 col-sm-4 " style="height:200px; border:2px solid green">
 
-            <img id="profile_pic" src="../images/images.jpg" />
+      <img id="profile_pic" src="../images/images.jpg" />
 
+    </div>
+    <div class="col-lg-5 col-sm-4 " style="height:200px; border:2px solid red">
 
-        </div>
-        <div class="col-lg-5 col-sm-4 " style="height:100%; border:2px solid red">
+      <!-- <div class="col-lg-12">
 
-            <div class="col-lg-12" >
-                <table ng-repeat="x in dum.header" id="list">
-                    <th >
-                        <tr>
-                            <td><b>Name:</b></td>
-                            <td id="mar">{{x.name}}</td>
-                        </tr>
-                        <tr>
-                            <td><b>Address:</b></td>
-                            <td id="mar">{{x.address}}</td>
-                        </tr>
-                        <tr>
-                            <td><b>Phone:</b></td>
-                            <td id="mar">{{x.phone}}</td>
-                        </tr>
-                        <tr>
-                            <td><b>Gender:</b></td>
-                            <td id="mar">{{x.gender}}</td>
-                        </tr>
-                    </th>
-                </table>
-            </div>
-        </div>
+        <ul id="list">
+          <li ng-repeat="x in dum.header"><label>name:</label>{{x}}</li>
+          <li><label>address:</label></li>
+          <li><label>phone:</label></li>
+          <li><label>gender:</label></li>
+        </ul>
+      </div> -->
+      <div class="col-lg-12" >
+          <table ng-repeat="x in dum.header" id="list">
+              <th >
+                  <tr>
+                      <td><b>Name:</b></td>
+                      <td id="mar">{{x.name}}</td>
+                  </tr>
+                  <tr>
+                      <td><b>Address:</b></td>
+                      <td id="mar">{{x.address}}</td>
+                  </tr>
+                  <tr>
+                      <td><b>Phone:</b></td>
+                      <td id="mar">{{x.phone}}</td>
+                  </tr>
+                  <tr>
+                      <td><b>Gender:</b></td>
+                      <td id="mar">{{x.gender}}</td>
+                  </tr>
+              </th>
+          </table>
+      </div>
 
-        <div class="col-lg-5 col-sm-4 " style="height:100%; border:2px solid orange">
+    </div>
+        <div class="col-lg-5 col-sm-4 " style="height:200px; border:2px solid orange">
             <div class="col-lg-12">
               <table ng-repeat="x in dum.header" id="list">
                   <th >
@@ -58,24 +66,50 @@
             </div>
 
         </div>
-        <!-- </div> -->
-        <div class="row" style="height:100%;border:2px solid">
-        <div class="col-lg-2 col-sm-4" style="height:100%; border:2px solid pink">
-            sadfd
         </div>
-        <div class="col-lg-10 col-sm-8" style="height:100%; border:2px solid blue">
-            <div class="detail">
 
 
-                <label for="name">Name:</label>
-                <input type="text" name="name" value=""><br>
-
-                <label for="address">Address:</label>
-                <input type="text" name="address" value=""><br>
-
-                <button type="button" class="btn btn-success" name="save">Save</button>
-                <button type="button" class="btn btn-danger" name="save">Cancel</button>
-            </div>
-        </div>
+  <div class="row" id="secondrow" style="height:100%; border:2px solid">
+    <div class="col-lg-2 col-sm-4" style="height:100%; border:2px solid pink">
+      sadfd
     </div>
+    <div class="col-lg-10 col-sm-8" style="height:100%; border:2px solid blue">
+      <button type="button" class="btn btn-success" id="edit" ng-click="save=!save;cancel=!cancel" ng-hide="edit" >Edit</button>
+
+      <div class="detail">
+
+<form class="" action="index.html" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" name="name"><br>
+
+        <label for="address">Address:</label>
+        <input type="text" name="address"><br>
+
+      <label for="Gender">Gender:</label>
+        <label class="radio-inline">
+      <input type="radio" name="male">Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="female">Female
+    </label>
+    <br>
+
+        <label for="Phone">Phone:</label>
+        <input type="text" name="Phone"><br>
+
+        <label for="email">Email_id:</label>
+        <input type="text" name="email"><br>
+
+
+
+        <button type="button" class="btn btn-success" name="save" ng-show="save" ng-hide="!edit">Save</button>
+        <button type="button" class="btn btn-danger" name="cancel" ng-show="cancel">Cancel</button>
+
+      </form>
+
+      </div>
+>>>>>>> cf6ba8932ddf0adbfd64ca9225975c26f9d5011b
+    </div>
+  </div>
 </div>
