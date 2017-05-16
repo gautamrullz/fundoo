@@ -8,5 +8,11 @@
 }
 
 .detail {
-    padding-top: 12%;
+    padding: 10%;
+}
+/*#secondrow{
+  position: inherit;
+}*/
+#edit{
+  float: right;
 }
