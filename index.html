@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title> My App</title>
-    <!-- <link rel="stylesheet" type="text/css" href="/styles.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/fa/css/font-awesome.css" /> -->
-    <link rel="stylesheet" type="text/css"  href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    #profile_pic{
-      width:100%;
-      height: 100%;
-    }
-    #list{
-      padding: 10%;
-    }
-    </style>
+
+  <title> My App</title>
+
+  <!-- <link rel="stylesheet" type="text/css" href="/fa/css/font-awesome.css" /> -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+
+
 </head>
+
 <body ng-app="myApp">
 
-<header class="main-header">
+  <header class="main-header">
 
     <!-- <h1>Angular Sample App</h1> -->
 
-</header>
-<ui-view></ui-view>
+  </header>
+  <ui-view></ui-view>
 
 
 
-<script type="text/javascript" src="./bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="./bower_components/angular-messages/angular-messages.min.js"></script>
-<script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
-<script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<!--Load main app.js file-->
-<script type="text/javascript" src="./app.js"></script>
+  <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-messages/angular-messages.min.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!--Load main app.js file-->
+  <script type="text/javascript" src="./app.js"></script>
 
-<!--controllers-->
-<script src="controller/home.js"></script>
-<script src="controller/next.js"></script>
+  <!--controllers-->
+  <script src="controller/home.js"></script>
+  <script src="controller/next.js"></script>
 
-<!--Directives-->
-<script src="Directive/usernamevalidator.js"></script>
-<script src="Directive/tableGenerator.js"></script>
+  <!--Directives-->
+  <script src="Directive/usernamevalidator.js"></script>
+  <script src="Directive/tableGenerator.js"></script>
 
-<!--Services-->
-<!-- <script src="Services/userAvailableCheck.js"></script> -->
+  <!--Services-->
+  <!-- <script src="Services/userAvailableCheck.js"></script> -->
 </body>
+
 </html>
