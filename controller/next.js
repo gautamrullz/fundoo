@@ -36,5 +36,5 @@ angular.module('myApp').controller('next', function ($scope, $http) {
 
         }]
     };
-    console.log($scope.dum);
+    console.log($scope.dum.header);
 });
