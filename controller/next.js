@@ -2,6 +2,7 @@ angular.module('myApp').controller('next', function ($scope, $http) {
     // $http.get('Directive/dummy.json').success(function(data){
     //     $scope.dummy = data;
     // })
+    
     $scope.dummy =
     {
         "header":[{
@@ -24,15 +25,21 @@ angular.module('myApp').controller('next', function ($scope, $http) {
     console.log($scope.dummy.header[0].userId);
     $scope.dum = {
         "header" : [{
-            "date" : $scope.dummy.header[0].date,
-            "inTime" : $scope.dummy.header[0].inTime,
-            "outTime" : $scope.dummy.header[0].outTime,
+            "name" : "ananya",
+            "address" : "Kolkata",
+            "phone" : 8787566722,
+            "gender":"female",
+            "email":"ananya@gmail.com",
+            "pan_no":"ARGT345456"
 
         }],
         "data" : [{
-            "date" : $scope.dummy.data[0].date,
-            "inTime" : $scope.dummy.data[0].inTime,
-            "outTime" : $scope.dummy.data[0].outTime,
+          "name" : "ananya",
+          "address" : "Kolkata",
+          "phone" : 8787566722,
+          "gender":"female",
+          "email":"ananya@gmail.com",
+          "pan_no":"ARGT345456"
 
         }]
     };

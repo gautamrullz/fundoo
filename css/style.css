@@ -4,9 +4,14 @@
 }
 
 #list {
-    padding: 10%;
-}
 
+  margin: 40px;
+
+}
+#mar{
+  padding: 3px;
+  /*margin-left: 34px;*/
+}
 .detail {
     padding-top: 12%;
 }
